@@ -1,0 +1,30 @@
+{
+  "name": "next-basic",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "server": "json-server --watch db/goodsDb.json --port 9000",
+    "run": "concurrently \"npm run server\" \"npm run dev\""
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.3",
+    "json-server": "^1.0.0-alpha.23",
+    "next": "14.2.2",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.75.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "concurrently": "^8.2.2",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.2",
+    "typescript": "^5"
+  }
+}
